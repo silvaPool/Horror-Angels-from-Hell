@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+   width: 100%;
+   height: 100vh;
+ 
+
+}
+
+/* HERO */
+
+.hero {
+    background: url("./images/horror-5.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    border-image:  linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 0%, 50%)) 1;
+}
+
+.hero > h1 {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    font-size: 50px;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.box-hero {
+    width: 40vw;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    display: grid;
+    gap: 10px;
+    text-align: left;
+}
+
+.box-hero .title-hero {
+    font-size: 45px;
+   letter-spacing: 2px;
+   font-family: "UnifrakturCook", cursive;
+   font-weight: 700;
+   font-style: normal;
+}
+
+.box-hero > p {
+    font-size: 20px;
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* MAIN */
+
+
+/* .box-main {
+    background: orangered;
+    height: 40vh;
+}
+
+.box-main > p {
+    font-size: 30px;
+
+} */
+
+/* EFEITO NO TEXTO COM FUNDO LARANJA */
+
+.scrolling-text-container {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    background: orangered;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: "Griffy", system-ui;
+    font-size: 30px;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: rotateX(-100%);
+    }
+    
+}
+
+
+#persons {
+    background: url("./images/horror-5.jpg");
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+    padding: 45px;
+    color: white;
+}
+
+#persons h2 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+#persons p {
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.conteiner-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10rem;
+   
+}
+
+.card-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, .05);
+    background: url("./images/horror-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-inner2 {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, .05);
+    background: url("./images/horror-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-inner3 {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, .05);
+    background: url("./images/horror-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    margin: 20px;
+   
+}
+
+.card-content > h2 {
+    color: white;
+    letter-spacing: 2px;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+    font-size: 5px;
+}
+
+.texto {
+    letter-spacing: 2px;
+    font-family: "UnifrakturCook", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.card:hover {
+    transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#ff7f00, #ff4d00);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+}
+
+.circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+
