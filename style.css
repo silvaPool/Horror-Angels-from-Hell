@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --title-spacing: 2px;
+    --title-weight: 900;
+    --title-family: "UnifrakturCook", cursive;
+    --title-style: normal;
+    --text-family: "Griffy", system-ui;
+    --text-weight: 400;
+    --text-style: normal;
+}
+
 .header {
    width: 100%;
    height: 100vh;
  
-
 }
 
 body::-webkit-scrollbar {
@@ -61,18 +70,18 @@ body::-webkit-scrollbar {
 }
 
 .box-hero .title-hero {
-    font-size: 45px;
-   letter-spacing: 2px;
-   font-family: "UnifrakturCook", cursive;
-   font-weight: 900;
-   font-style: normal;
+   font-size: 45px;
+   letter-spacing: var(--title-spacing);
+   font-family: var(--title-family);
+   font-weight: var(--title-weight);
+   font-style: var(--title-style);
 }
 
 .box-hero > p {
     font-size: 20px;
-    font-family: "Griffy", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--text-family);
+    font-weight: var(--text-weight);
+    font-style: var(--text-style);
 }
 
 /* MAIN */
@@ -105,7 +114,7 @@ body::-webkit-scrollbar {
 .scrolling-text {
     display: inline-block;
     white-space: nowrap;
-    font-family: "Griffy", system-ui;
+    font-family: var(--text-family);
     font-size: 30px;
     animation: scroll-text 10s linear infinite;
 }
@@ -135,17 +144,17 @@ body::-webkit-scrollbar {
 }
 
 #persons h2 {
-    font-family: "UnifrakturMaguntia", cursive;
+    font-family: var(--title-family);
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
+    font-style: var(--title-style);
+    letter-spacing: var(--title-spacing);
     font-size: 35px;
 }
 
 #persons p {
-    font-family: "Griffy", system-ui;
+    font-family: var(--text-family);
     font-weight: 400;
-    font-style: normal;
+    font-style: var(--text-style);
     font-size: 25px;
 }
 
@@ -223,17 +232,17 @@ body::-webkit-scrollbar {
 .card-content > h2 {
     color: white;
     letter-spacing: 2px;
-    font-family: "UnifrakturMaguntia", cursive;
-    font-style: normal;
+    font-family: var(--title-family);
+    font-style: var(--title-style);
     margin-bottom: 5px;
 
 }
 
 .texto {
     letter-spacing: 2px;
-    font-family: "UnifrakturCook", cursive;
+    font-family: var(--title-family);
     font-weight: 700;
-    font-style: normal;
+    font-style: var(--title-style);
     font-size: 10px;
 }
 
@@ -285,33 +294,33 @@ body::-webkit-scrollbar {
 }
 
 .box-testemunhas {
-    border: 1px solid red;
     text-align: right;
     padding: 25px;
     height: 20vh;
 }
 
 .box-testemunhas h2 {
-    font-family: "UnifrakturMaguntia", cursive;
+    font-family: var(--title-family);
     font-weight: 400;
-    font-style: normal;
+    font-style: var(--title-style);
     letter-spacing: 2px;
     font-size: 35px;
     margin-bottom: 3px;
 }
 
 .box-testemunhas p {
-    font-family: "Griffy", system-ui;
+    font-family: var(--text-family);
     font-weight: 400;
-    font-style: normal;
+    font-style: var(--text-style);
     font-size: 20px;
 }
 
 .cards-testemunhas {
     display: flex;
     flex-direction: row;
-    gap: 45px;
-    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+   
 }
 
 .cards-testemunhas .red {
@@ -335,7 +344,7 @@ body::-webkit-scrollbar {
    background-repeat: no-repeat;
    background-size: cover;
    aspect-ratio: 1;
-   border-image: linear-gradient(hsl(240 100% 50% / .3), hsl(0 100% 50% / .3)) fill 1
+   border-image: linear-gradient(hsl(30 100% 50% / .3), hsl(0 100% 50% / .3)) fill 1
 }
 
 .cards-testemunhas .card-teste {
@@ -344,8 +353,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 350px;
-    width: 250px;
+    height: 380px;
+    width: 290px;
     border-radius: 10px;
     color: white;
     cursor: pointer;
