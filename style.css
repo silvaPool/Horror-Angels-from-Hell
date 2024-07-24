@@ -11,10 +11,24 @@
 
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: orangered;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+     /* creates padding around scroll thumb */
+  }
+
 /* HERO */
 
 .hero {
-    background: url("./images/horror-5.jpg");
+    background: url("./images/horror-9.jpg");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -22,15 +36,15 @@
     background-position: center;
     overflow: hidden;
     color: white;
-    border-image:  linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 0%, 50%)) 1;
+    border-image:  linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%)) 1;
 }
 
 .hero > h1 {
     position: relative;
     top: 10%;
-    left: 15%;
+    left: 5%;
     font-size: 50px;
-    font-family: "UnifrakturMaguntia", cursive;
+    font-family: "Nosifer", cursive;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
@@ -39,7 +53,7 @@
 .box-hero {
     width: 40vw;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 55%;
     display: grid;
     gap: 10px;
@@ -50,7 +64,7 @@
     font-size: 45px;
    letter-spacing: 2px;
    font-family: "UnifrakturCook", cursive;
-   font-weight: 700;
+   font-weight: 900;
    font-style: normal;
 }
 
@@ -185,7 +199,7 @@
     width: inherit;
     height: inherit;
     background: rgba(255, 255, 255, .05);
-    background: url("./images/horror-4.jpg");
+    background: url("./images/horror-8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -210,10 +224,9 @@
     color: white;
     letter-spacing: 2px;
     font-family: "UnifrakturMaguntia", cursive;
-    font-weight: 400;
     font-style: normal;
     margin-bottom: 5px;
-    font-size: 5px;
+
 }
 
 .texto {
@@ -226,6 +239,7 @@
 
 .card:hover {
     transform: scale(1.04) rotate(1deg);
+    text-transform: uppercase;
 }
 
 .circle {
@@ -260,3 +274,98 @@
     }
   }
 
+/* CARDS - TESTEMUNHAS */
+
+.testemunhas {
+    background-color: orangered;
+    height: 110vh;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+}
+
+.box-testemunhas {
+    border: 1px solid red;
+    text-align: right;
+    padding: 25px;
+    height: 20vh;
+}
+
+.box-testemunhas h2 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+
+.box-testemunhas p {
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.cards-testemunhas {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin: 0 auto;
+}
+
+.cards-testemunhas .red {
+   background: url("./images/homem-medo.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   aspect-ratio: 1;
+   border-image: linear-gradient(hsl(240 100% 50% / .3), hsl(0 100% 50% / .3)) fill 1
+}
+
+.cards-testemunhas .blue {
+   background: url("./images/homem-medo2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   aspect-ratio: 1;
+   border-image: linear-gradient(hsl(240 100% 50% / .3), hsl(0 100% 50% / .3)) fill 1
+}
+
+.cards-testemunhas .green {
+    background: url("./images/mulher-medo.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   aspect-ratio: 1;
+   border-image: linear-gradient(hsl(240 100% 50% / .3), hsl(0 100% 50% / .3)) fill 1
+}
+
+.cards-testemunhas .card-teste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards-testemunhas .card-teste p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards-testemunhas .card-teste p.second-text {
+    font-size: .7em;
+}
+
+.cards-testemunhas .card-teste:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards-testemunhas:hover > .card-teste:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
