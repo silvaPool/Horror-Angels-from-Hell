@@ -388,4 +388,13 @@ body::-webkit-scrollbar {
     letter-spacing: var(--title-spacing);
 }
 
+footer {
+    height: 50vh;
+    background: url("./images/house-horror.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
 
