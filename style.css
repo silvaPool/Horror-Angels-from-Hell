@@ -394,7 +394,24 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
+footer > h2 {
+    font-size: 35px;
+    font-family: "Nosifer", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+footer ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: var(--text-family);
 }
 
 
