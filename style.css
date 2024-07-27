@@ -100,6 +100,27 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (max-width: 932px) {
+   
+    .hero > h1 {
+      width: 85vw;
+      left: 8%;
+    }
+}
+
+@media (max-width: 1366px) {
+   
+    .hero  {
+       
+    }
+    .box-hero .title-hero {
+        font-size: 50px;
+    }
+    .box-hero > p {
+        font-size: 25px;
+    }
+}
+
 /* MAIN */
 
 
@@ -192,6 +213,22 @@ body::-webkit-scrollbar-thumb {
 
     }
 }
+
+@media (max-width: 1366px) {
+    .conteiner-cards {
+        flex-direction: column;
+
+    }
+   
+}
+
+@media (max-width: 1366px) {
+    #persons {
+        height: 100%;
+    }
+   
+}
+
 
 .card {
     width: 300px;
@@ -347,6 +384,20 @@ body::-webkit-scrollbar-thumb {
     height: 20vh;
 }
 
+@media (max-width: 1366px) {
+   .box-testemunhas {
+    text-align: left;
+    border: 1px solid blue;
+    margin-bottom: 0;
+   }
+   .testemunhas {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   }
+}
+
 .box-testemunhas h2 {
     font-family: var(--title-family);
     font-weight: 400;
@@ -369,7 +420,6 @@ body::-webkit-scrollbar-thumb {
        padding: 5px;
        width: 60vw;
        height: 35vh;
-       border: 1px solid blue;
     }
     .box-testemunhas p {
         font-size: 15px;
@@ -396,10 +446,9 @@ body::-webkit-scrollbar-thumb {
         margin-top: 50px;
         gap: 20px;
         margin-bottom: 0;
-    
-       
     }
 }
+
 
 .depoimento-1 {
     border: 1px solid orangered;
@@ -445,6 +494,23 @@ body::-webkit-scrollbar-thumb {
     } 
 }
 
+@media (max-width: 1366px) {
+    .depoimentos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .depoimento-1 > p {
+        font-size: 30px;
+    }
+    .depoimento-2 {
+        align-self: center;
+    }
+}
+
 /* .image-depoimento {
     width: 100%;
     height: 90px;
@@ -479,6 +545,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 15px;
     }
    
+}
+
+@media (max-width: 1366px) {
+    .halloween-container > div > p {
+        font-size: 25px;
+    }
 }
 
 footer {
