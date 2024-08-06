@@ -223,7 +223,6 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 1366px) {
     #persons {
         height: 130vh;
-        border: 1px solid red;
     }
    
 }
