@@ -572,13 +572,6 @@ footer > h2 {
     letter-spacing: 2px;
 }
 
-footer ul {
-    list-style-type: none;
-    font-size: 20px;
-    font-family: var(--text-family);
-}
-
-
 @media (max-width: 667px) {
     footer {
         height: 60vh;
