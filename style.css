@@ -231,6 +231,8 @@ body::-webkit-scrollbar-thumb {
 .card {
     width: 300px;
     height: 400px;
+    background-size: contain;
+    background-position: center;
     transition: all 0.2s;
     position: relative;
     cursor: pointer;
@@ -252,7 +254,7 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -267,7 +269,7 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -282,7 +284,7 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
